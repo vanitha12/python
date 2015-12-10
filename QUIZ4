@@ -1,0 +1,17 @@
+text=raw_input("Enter a String: ")
+i = len(text)
+rev = ""
+while i != 0:
+ rev = rev + text[i-1]
+ i = i - 1
+print rev
+
+----------------------------------------------------------------
+text=raw_input("Enter a String: ")
+lst = []
+count = 1
+for i in range(0,len(text)):
+        lst.append(text[len(text)-count])
+        count += 1
+lst = ''.join(lst)
+print lst
